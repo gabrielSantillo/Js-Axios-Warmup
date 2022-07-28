@@ -1,5 +1,5 @@
 function post_success(response) {
-    button_one.insertAdjacentHTML(`afterend`, `${response[`data`][`message`]}`);
+    button_one.insertAdjacentHTML(`afterend`, `<img src="${response[`data`][`message`]}">`);
 }
 
 function post_failure(error) {
